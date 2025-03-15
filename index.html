@@ -1,172 +1,118 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <title>Hadeel Omar</title>
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body class="is-preload">
-    <!-- wrapper -->
-    <div id="wrapper" class="divided">
+<body>
+    <div id="particles"></div>
+    
+    <header>
+        <h1 class="logo">Hadeel Omar</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h2>Hello, I'm Hadeel :)</h2>
+            <p>Aspiring Software Developer in my penultimate year studying Computer Systems Engineering at Queen Mary, University of London.</p>
+            <div class="profile-links">
+                <a href="HadeelCV.pdf" target="_blank">Download CV</a>
+                <a href="https://www.linkedin.com/in/hadeel-omar-40a388255/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="experience" class="timeline">
+        <h2>Experience</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <span class="date">June 2025 - August 2025</span>
+                <h3>Software Development Engineer Intern</h3>
+                <p><strong>Company:</strong> Warner Bros. Discovery</p>
+                <br>
+                <p>Incoming SDE intern in Global Tech and Products, working on streaming platforms HBO Max and discovery+.</p>
+            </div>
+            <div class="timeline-item">
+                <span class="date">September 2024 - December 2024</span>
+                <h3>Teaching Assistant/Demonstrator</h3>
+                <p><strong>Company:</strong> Queen Mary, University of London</p>
+                <br>
+                <p>Selected due to high academic achievement to deliver weekly tutorials for the module Electronic Engineering Mathematics 1 to over 100 students, mark weekly assignments, both formative and summative and provide feedback to over 20 students. Topics covered include complex numbers, vectors, calculus, hyperbolic functions, sequences and series.</p>
+            </div>
+            <div class="timeline-item">
+                <span class="date">July 2024</span>
+                <h3>Xperience Tech Intern</h3>
+                <p><strong>Company:</strong> BNY</p>
+                <br>
+                <p>Shadowed software engineers, FX traders and learnt more about the bank's in-house generative AI model Eliza, powered by NVIDIA's DGX SuperPOD and its uses in banking.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- header -->
-        <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-            <div class="content">
-                <h1>Hadeel Omar</h1>
-                <p class="major">Penultimate year BEng Computer Systems Engineering student at Queen Mary University of London. Passionate about tech, maths, and physics!</p>
-                <ul class="actions stacked">
-                    <li><a href="#about" class="button big wide smooth-scroll-middle">Enter Site</a></li>
-                </ul>
+    <section id="education" class="timeline">
+        <h2>Education</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <span class="date">2023 - 2026</span>
+                <h3>Queen Mary University of London</h3>
+                <p><strong>BEng Computer Systems Engineering (Hons)</strong></p>
+                <br>
+                <p><strong>First Year:</strong> 1st Class achieved (83%)</p>
+                <p>Modules: Procedural Programming, Engineering Skills and Practice, Electronic Engineering Mathematics 1, Object-Oriented Programming, Signals and Information, Communications and Networks, Analogue Electronic Systems, Digital Circuit Design.</p>
+                <br>
+                <p><strong>Second Year:</strong> Currently studying</p>
+                <p>Modules: Software Engineering, Algorithms and Data Structures, Communications Systems, Microprocessors Systems Design, Software Engineering Project, Graphical User Interfaces, Digital Systems Design, Operating Systems.</p>
             </div>
-            <div class="image">
-                <img src="images/avatar.jpg" alt="Banner Image" />
+            <div class="timeline-item">
+                <span class="date">2020 - 2022</span>
+                <h3>London Academy</h3>
+                <p>A Levels: Chemistry (A*), Mathematics (A*), Physics (B)</p>
             </div>
-        </section>
-
-        <!-- about section -->
-        <section id="about" class="wrapper style1 align-center">
-            <div class="inner">
-                <h2>About Me</h2>
-                <p>Hello! I'm Hadeel, a dedicated student of Computer Systems Engineering. I am fascinated by how technology shapes our world and eager to contribute to the field with innovative solutions.</p>
-                <p>My interests include software development, artificial intelligence, and exploring the intersection of technology with mathematics and engineering, including quantum computing and digital electronics. I'm always excited to learn and collaborate on projects that push the boundaries of what technology can achieve.</p>
+        </div>
+    </section>
+    
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <br>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="images/project1.png" alt="Project 1">
+                <h3>Sprout Lands</h3>
+                <p>Python | Pygame</p>
+                <p class="description">A 2D farming simulation game where players can plant, harvest, and sell crops while managing resources.</p>
             </div>
-        </section>
-
-        <!-- projects section -->
-        <section id="projects" class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-            <div class="content">
-                <h2>Projects</h2>
-                <p>Here are some of the projects I have worked on recently:</p>
-                <ul>
-                    <li><strong>Flicks and Picks:</strong> Designed a concept for a film rating website using HTML, CSS and JavaScript, as part of CodeFirstGirls' Introduction to Web Development course, using TMDb and OMDb APIs to fetch data and retrieve results for films upon searching. Winning website out of 10 other websites, back-end development pending.</li>
-                    <li><strong>PantryPal:</strong> A pantry management application using Nextjs, Material UI/React for UI components and Firebase as a backend service.</li>
-                </ul>
-                <ul class="actions stacked">
-                    <li><a href="https://www.linkedin.com/in/hadeel-omar-40a388255/" class="button">Connect on LinkedIn</a></li>
-                </ul>
+            <div class="project-card">
+                <img src="images/project2.png" alt="Project 2">
+                <h3>Inventory Management</h3>
+                <p>React | Next.js | Firebase</p>
+                <p class="description">A web-based inventory management system for tracking stock, suppliers, and real-time updates.</p>
             </div>
-            <div class="image">
-                <img src="images/cs.jpeg" alt="Project Image" />
+            <div class="project-card">
+                <img src="images/project3.png" alt="Project 3">
+                <h3>Portfolio Website</h3>
+                <p>HTML | CSS | JavaScript</p>
+                <p class="description">A responsive and interactive personal portfolio website showcasing my projects and experience.</p>
             </div>
-        </section>
-
-        <!-- skills section -->
-        <section id="skills" class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-            <div class="content">
-                <h2>Skills</h2>
-                <p>I have developed a diverse skill set during my studies and through personal projects, including:</p>
-                <ul>
-                    <li><strong>Programming Languages:</strong> Python, Java, Assembly</li>
-                    <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
-                    <li><strong>Software Tools:</strong> Git, MATLAB, Cisco Packet Tracer, NI Multisim</li>
-                    <li><strong>Technical Skills:</strong> Data Analysis, Problem-Solving, System Design</li>
-                </ul>
-                <ul class="actions stacked">
-                    <li><a href="HadeelCV.pdf" class="button">CV / Resume</a></li>
-                </ul>
-            </div>
-            <div class="image">
-                <img src="images/logos.jpeg" alt="Skills Image" />
-            </div>
-        </section>
-
-        <!-- gallery section -->
-        <section class="wrapper style1 align-center">
-            <div class="inner">
-                <h2>Photo Gallery</h2>
-                <p>A collection of images showcasing my projects, experiences, and extracurriculars.</p>
-
-                <!-- gallery -->
-                <div class="gallery style2 medium lightbox onscroll-fade-in">
-                    <article>
-                        <a href="images/gallery/fulls/pantrypal.jpg" class="image">
-                            <img src="images/gallery/thumbs/pantrypal.jpg" alt="PantryPal" />
-                        </a>
-                        <div class="caption">
-                            <h3>PantryPal</h3>
-                            <p>A full stack pantry management app built with Nextjs, Material UI/React and Firebase.</p>
-                            <ul class="actions fixed">
-                                <li><span class="button small">Enlarge</span></li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article>
-                        <a href="images/gallery/fulls/flicks.jpg" class="image">
-                            <img src="images/gallery/thumbs/flicks.jpg" alt="Flicks and Picks" />
-                        </a>
-                        <div class="caption">
-                            <h3>Flicks and Picks</h3>
-                            <p>Concept of a film rating website designed using HTML, CSS, Bootstrap and JavaScript using TMDb and OMDb APIs to fetch data and search for films.</p>
-                            <ul class="actions fixed">
-                                <li><span class="button small">Enlarge</span></li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article>
-                        <a href="images/gallery/fulls/design.jpg" class="image">
-                            <img src="images/gallery/thumbs/design.jpg" alt="_designsbyh_" />
-                        </a>
-                        <div class="caption">
-                            <h3>@_designsbyh_</h3>
-                            <p>Small business focusing on graphic design and motion graphics for weddings, birth announcements and digital/video invites, primarily in Arabic with customers in the UK and the Gulf region.</p>
-                            <ul class="actions fixed">
-                                <li><span class="button small">Enlarge</span></li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="wrapper style1 align-center">
-            <div class="inner medium">
-                <h2>Get in Touch</h2>
-                <p>If you have any questions, opportunities, or just want to say hello, feel free to contact me!</p>
-                <form method="post" action="mailto:hadeelomar1409@gmail.com">
-                    <div class="fields">
-                        <div class="field half">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" placeholder="Your Name" />
-                        </div>
-                        <div class="field half">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Your Email" />
-                        </div>
-                        <div class="field">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="6" placeholder="Your Message"></textarea>
-                        </div>
-                    </div>
-                    <ul class="actions special">
-                        <li><input type="submit" value="Send Message" /></li>
-                    </ul>
-                </form>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="wrapper style1 align-center">
-            <div class="inner">
-                <ul class="icons">
-                    <li><a href="https://www.instagram.com/_designsbyh_/?hl=en" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="https://linkedin.com/in/hadeel-omar-40a388255/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="mailto:hadeelomar1409@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-                </ul>
-                <p>&copy; 2024 Hadeel Omar.</a></p>
-            </div>
-        </footer>
-    </div>
-
-    <!-- scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Hadeel Omar. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
 </body>
 </html>
